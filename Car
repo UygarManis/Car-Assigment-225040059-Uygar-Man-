@@ -1,0 +1,62 @@
+using System;
+
+namespace MyCarSuggestionProject
+{
+    public class Car
+    {
+        public string Name { get; set; }
+        public int Budget { get; set; }  // Budget as an integer
+
+        // Constructor, including name and budget
+        public Car(string name, int budget)
+        {
+            Name = name;
+            Budget = budget;
+        }
+
+        // Method to suggest a car based on the user's budget
+        public void SuggestCar()
+        {
+            if (Budget >= 100000)
+            {
+                Console.WriteLine($"Dear {Name}, the most suitable car for you is a Mercedes S Class!");
+            }
+            else if (Budget >= 90000)
+            {
+                Console.WriteLine($"Dear {Name}, the most suitable car for you is a BMW 5 Series!");
+            }
+            else if (Budget >= 80000)
+            {
+                Console.WriteLine($"Dear {Name}, the most suitable car for you is an Audi A4!");
+            }
+            else if (Budget >= 70000)
+            {
+                Console.WriteLine($"Dear {Name}, the most suitable car for you is a Volkswagen Passat!");
+            }
+            else if (Budget >= 60000)
+            {
+                Console.WriteLine($"Dear {Name}, the most suitable car for you is a Toyota Corolla!");
+            }
+            else if (Budget >= 50000)
+            {
+                Console.WriteLine($"Dear {Name}, the most suitable car for you is a Honda Civic!");
+            }
+            else if (Budget >= 40000)
+            {
+                Console.WriteLine($"Dear {Name}, the most suitable car for you is a Ford Focus!");
+            }
+            else if (Budget >= 30000)
+            {
+                Console.WriteLine($"Dear {Name}, the most suitable car for you is a Renault Brodway!");
+            }
+            else if (Budget >= 20000)
+            {
+                Console.WriteLine($"Dear {Name}, the most suitable car for you is a Tofaş!");
+            }
+            else
+            {
+                Console.WriteLine($"Dear {Name}, unfortunately, there is no suitable car within your budget.");
+            }
+        }
+    }
+}
