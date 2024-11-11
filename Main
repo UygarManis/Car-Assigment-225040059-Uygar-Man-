@@ -1,0 +1,25 @@
+// Program.cs
+using System;
+
+namespace MyCarSuggestionProject
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            // Prompt the user to enter their name
+            Console.Write("Please enter your name: ");
+            string name = Console.ReadLine();
+
+            // Prompt the user to enter their budget
+            Console.Write("Please enter your budget: ");
+            int budget = int.Parse(Console.ReadLine());  // Convert budget to int
+
+            // Create a new Car object
+            Car car1 = new Car(name, budget);
+
+            // Suggest the most suitable car for the user
+            car1.SuggestCar();
+        }
+    }
+}
