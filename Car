@@ -17,31 +17,31 @@ namespace MyCarSuggestionProject
         // Method to suggest a car based on the user's budget
         public void SuggestCar()
         {
-            if (Budget >= 100000)
+            if (Budget >= 300000)
             {
                 Console.WriteLine($"Dear {Name}, the most suitable car for you is a Mercedes S Class!");
             }
-            else if (Budget >= 90000)
+            else if (Budget >= 200000)
             {
                 Console.WriteLine($"Dear {Name}, the most suitable car for you is a BMW 5 Series!");
             }
-            else if (Budget >= 80000)
+            else if (Budget >= 150000)
             {
                 Console.WriteLine($"Dear {Name}, the most suitable car for you is an Audi A4!");
             }
-            else if (Budget >= 70000)
+            else if (Budget >= 100000)
             {
                 Console.WriteLine($"Dear {Name}, the most suitable car for you is a Volkswagen Passat!");
             }
-            else if (Budget >= 60000)
+            else if (Budget >= 80000)
             {
                 Console.WriteLine($"Dear {Name}, the most suitable car for you is a Toyota Corolla!");
             }
-            else if (Budget >= 50000)
+            else if (Budget >= 65000)
             {
                 Console.WriteLine($"Dear {Name}, the most suitable car for you is a Honda Civic!");
             }
-            else if (Budget >= 40000)
+            else if (Budget >= 50000)
             {
                 Console.WriteLine($"Dear {Name}, the most suitable car for you is a Ford Focus!");
             }
